@@ -20,7 +20,27 @@
     </header>
 
     <section class="banner" id="home">
-        <h2>This will <span>change</span> later</h2>
+        <h2>This will<br> <span>change</span> later</h2>
     </section>
+
+    <section class="sec" id="about">
+        <div class ="content">
+            <div class="mxw800p">
+                <h3>About Me</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, aspernatur maiores? Iusto culpa earum eaque ea quod 
+                    dolor suscipit dolore quas tempore quae error, at nobis, necessitatibus voluptatem maxime saepe.</p>
+                    <a href="#" class="btn">Read My Story</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+        </script>
 </body>
 </html>
