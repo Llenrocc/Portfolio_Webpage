@@ -105,14 +105,26 @@ header.sticky .logo, header.sticky ul li a {
 }
 
 .sec .content {
+    padding-bottom: 150px;
     position: relative;
     text-align: center;
     width: 100;
 }
 
+#about {
+    background: #000;
+    color: #fff;
+}
+
+.content {
+    position: relative;
+    display: grid;
+}
+
 .mxw800p {
     max-width: 800px;
     margin: 0 auto;
+    
 }
 
 h3 {
@@ -133,9 +145,9 @@ p {
     position: relative;
     display: inline-block;
     padding: 10px 30px;
-    background: #000;
+    background: #fff;
     text-decoration: none;
-    color: #fff;
+    color: #000;
 }
 
 .workBx {
@@ -143,7 +155,7 @@ p {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 30px;
-    max-width: 100px;
+    max-width: 100%;
     margin-top: 40px;
 }
 
@@ -160,6 +172,7 @@ p {
 
 .workBx .brand:hover {
     background: #000;
+
 }
 
 .workBx .brand a {
@@ -170,6 +183,7 @@ p {
     letter-spacing: 2px;
 }
 
-.workBx .brand:hover {
+.workBx .brand:hover a {
     color: rgba(255, 255, 255, 1);
 }
+
