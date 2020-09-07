@@ -1,3 +1,4 @@
+img { max-width: 100%; height: auto; }
 *
 {
     margin: 0;
@@ -105,7 +106,6 @@ header.sticky .logo, header.sticky ul li a {
 }
 
 .sec .content {
-    padding-bottom: 150px;
     position: relative;
     text-align: center;
     width: 100;
@@ -135,24 +135,17 @@ h3 {
 
 p {
     position: relative;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 300;
     margin-bottom: 20px;
     letter-spacing: 1px;
 }
 
-.btn {
-    position: relative;
-    display: inline-block;
-    padding: 10px 30px;
-    background: #fff;
-    text-decoration: none;
-    color: #000;
-}
+
 
 .workBx {
     position: relative;
-    display: grid;
+    display:grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 30px;
     max-width: 100%;
@@ -161,30 +154,13 @@ p {
 
 .workBx .brand {
     position: relative;
-    background: #4978ff;
+    background: #000;
     min-height: 300px;
     width: 250px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.workBx .brand:hover {
-    background: #000;
-
-}
-
-.workBx .brand a {
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.4);
-    text-transform: uppercase;
-    font-size: 14px;
-    letter-spacing: 2px;
-}
-
-.workBx .brand:hover a {
-    color: rgba(255, 255, 255, 1);
 }
 
 .contact {
@@ -286,4 +262,11 @@ p {
 
 .copyright a {
     color: #fff;
+}
+
+button {
+    position: relative;
+    background: #000;
+    outline-color: #000;
+
 }

@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="HandheldFriendly" content="true">
     <title>Portfolio Webpage</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Macondo+Swash+Caps&family=Trochut&family=Viaoda+Libre&display=swap" rel="stylesheet">
@@ -17,8 +19,6 @@
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-        <div class="toggle" onclick="toggle()">
-        </div>
     </header>
 
     <section class="banner" id="home">
@@ -35,8 +35,8 @@
                 <br><br><p>I am a full stack web developer in Toronto, Canada. I attended a coding bootcamp at the
                     University of Toronto in 2020, and gained a big interest in front end CSS design. The skills I learned 
                     have allowed me to apply them to my own projects and give me a good block to start building from. I have 
-                    a background in Film & TV production, with a lot of time spent acting, as well as editing, foley, ADR, 
-                    and soundFX. I am a budding amateur photographer who enjoys photo editing and music production in my spare
+                    a background in Film & TV production, with a lot of time spent editing,doing foley, ADR and soundFX. 
+                    I am a budding amateur photographer who enjoys photo editing and music production in my spare
                     time. 
                 </p>
             </div>
@@ -47,19 +47,33 @@
         <div class="content">
             <div class="mxw800p">
                 <h3>Recent Work</h3>
-                <p></p>
+                <p>Below are links to some of my recent projects that I have worked on.</p>
             </div>
             <div class="workBx">
                 <div class="brand">
+                    <div class="imgBx">
+                        <img src="assets/IMG_0498.jpg">
+                    </div>
+                    <div class="details">
+                    <a href="#"><h2>Project<span> Name</span></h2></a>
+                    </div>
+                </div>
+                <div class="brand">
+                    <div class="imgBx">
+                        <img src="assets/IMG_0498.jpg">
+                    </div>
                     <a href="#"><h2>Project Name</h2></a>
                 </div>
                 <div class="brand">
+                    <div class="imgBx">
+                        <img src="assets/IMG_0498.jpg">
+                    </div>
                     <a href="#"><h2>Project Name</h2></a>
                 </div>
                 <div class="brand">
-                    <a href="#"><h2>Project Name</h2></a>
-                </div>
-                <div class="brand">
+                    <div class="imgBx">
+                        <img src="assets/IMG_0498.jpg">
+                    </div>
                     <a href="#"><h2>Project Name</h2></a>
                 </div>
             </div>
@@ -70,7 +84,8 @@
         <div class="content">
             <div class="mxw800p">
                 <h3>Contact Me</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Contact me by leaving your name & email with a brief message,or by clicking on 
+                    the icons below and following me on social media.</p>  
             </div>
             <div class="contactForm">
                 <form>
@@ -96,9 +111,9 @@
             </div>
             <div class="sci">
                 <ul>
-                    <li><a href="#"><img src="assets/SMA-Facebook.png"></a></li>
-                    <li><a href="#"><img src="assets/a1.jpeg"></a></li>
-                    <br><li><a href="#"><img src="assets/download1.png"></a></li>
+                    <li><a href="https://www.facebook.com/nate.cornell.5/" target="_blank"><img alt="facebook logo" src="assets/SMA-Facebook.png"></a></li>
+                    <li><a href="https://www.instagram.com/llenrocc/" target="_blank"><img alt="instagram logo" src="assets/a1.jpeg"></a></li>
+                    <br><li><a href="https://www.linkedin.com/in/nathan-cornell02" target="_blank"><img alt="linkedin logo" src="assets/download1.png"></a></li>
                 </ul>
             </div>
             <br><br><p class="copyright"> Nathan Cornell</a></p>
@@ -108,11 +123,7 @@
         window.addEventListener("scroll", function () {
             var header = document.querySelector("header");
             header.classList.toggle("sticky", window.scrollY > 0);
-        })
-        function toggle() {
-            var header = document.querySelector("header");
-            header.classList.toggle("active");
-        }
+        });
         </script>
 </body>
 </html>
