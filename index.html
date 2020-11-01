@@ -1,129 +1,254 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-    <meta name="HandheldFriendly" content="true">
-    <title>Portfolio Webpage</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Macondo+Swash+Caps&family=Trochut&family=Viaoda+Libre&display=swap" rel="stylesheet">
-</head>
-<body>
-    
-    <header id="header">
-        <a href="#" class="logo">nC</a>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Portfolio Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Combo&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/836a943e18.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+          <div class="burger-menu-icon">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#landing-page">
+                <img
+                  src="assets/Pic1.png"
+                  alt="Nate C"
+                  class="profile-pic nav-link"/>
+                <span class="caption nav-link">Nathan Cornell</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#services" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+
+            <!---
+            <li class="nav-item">
+              <a href="#" target="_blank" class="nav-link">
+                <i class="fab fa-Github"></i>
+              </a>
+              <a href="#" target="_blank" class="nav-link">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" target="_blank" class="nav-link">
+                <i class="fab fa-linkedIn"></i>
+              </a>
+            </li>
+        -->
+          </ul>
+      </div>
     </header>
-
-    <section class="banner" id="home">
-        <h2>What can we<br> <span>build</span> together?</h2>
-    </section>
-
-    <section class="sec" id="about">
-        <div class ="content">
-            <div class="mxw800p">
-                <h3>About Me</h3>
-                <br><div class="imgBx">
-                    <img src="assets/Pic1.png" alt="photo of me">
-                </div>
-                <br><br><p>I am a full stack web developer in Toronto, Canada. I attended a coding bootcamp at the
-                    University of Toronto in 2020, and gained a big interest in front end CSS design. The skills I learned 
-                    have allowed me to apply them to my own projects and give me a good block to start building from. I have 
-                    a background in Film & TV production, with a lot of time spent editing,doing foley, ADR and soundFX. 
-                    I am a budding amateur photographer who enjoys photo editing and music production in my spare
-                    time. 
-                </p>
+    <main>
+      <section id="landing-page" class="landing-page">
+        <div class="container">
+          <div class="main-message">
+            <h2>Welcome</h2>
+            <h3>What Can We Build Together?</h3>
+            <div class="intro-btn">
+              <div class="cta">
+                <a href="#contact" class="btn">Reach Out</a>
+              </div>
+              <div class="cta">
+                <a href="#projects" class="btn">My Projects</a>
+              </div>
             </div>
+            <div>
+              <a href="#about" class="scroll-down">
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <section class="sec work" id="portfolio">
-        <div class="content">
-            <div class="mxw800p">
-                <h3>Recent Work</h3>
-                <p>Below are links to some of my recent projects that I have worked on.</p>
-            </div>
-            <div class="workBx">
-                <div class="brand">
-                    <div class="imgBx">
-                        <img src="assets/IMG_0498.jpg">
-                    </div>
-                    <div class="details">
-                    <a href="#"><h2>Project<span> Name</span></h2></a>
-                    </div>
-                </div>
-                <div class="brand">
-                    <div class="imgBx">
-                        <img src="assets/IMG_0498.jpg">
-                    </div>
-                    <a href="#"><h2>Project Name</h2></a>
-                </div>
-                <div class="brand">
-                    <div class="imgBx">
-                        <img src="assets/IMG_0498.jpg">
-                    </div>
-                    <a href="#"><h2>Project Name</h2></a>
-                </div>
-                <div class="brand">
-                    <div class="imgBx">
-                        <img src="assets/IMG_0498.jpg">
-                    </div>
-                    <a href="#"><h2>Project Name</h2></a>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section class="sec contact" id="contact">
-        <div class="content">
-            <div class="mxw800p">
-                <h3>Contact Me</h3>
-                <p>Contact me by leaving your name & email with a brief message,or by clicking on 
-                    the icons below and following me on social media.</p>  
-            </div>
-            <div class="contactForm">
-                <form>
-                    <div class="row100">
-                        <div class="inputBx50">
-                            <input type="text" name="" placeholder="Full Name">
-                        </div>
-                        <div class="inputBx50">
-                            <input type="text" name="" placeholder="Email Address">
-                        </div>
-                    </div>
-                    <div class="row100">
-                        <div class="inputBx100">
-                            <textarea placeholder="Message"></textarea>
-                        </div>
-                    </div>
-                    <div class="row100">
-                        <div class="inputBx100">
-                            <input type="submit" name="" value="Send">
-                        </div>
-                    </div>                   
-                </form>
-            </div>
-            <div class="sci">
-                <ul>
-                    <li><a href="https://www.facebook.com/nate.cornell.5/" target="_blank"><img alt="facebook logo" src="assets/SMA-Facebook.png"></a></li>
-                    <li><a href="https://www.instagram.com/llenrocc/" target="_blank"><img alt="instagram logo" src="assets/a1.jpeg"></a></li>
-                    <br><li><a href="https://www.linkedin.com/in/nathan-cornell02" target="_blank"><img alt="linkedin logo" src="assets/download1.png"></a></li>
-                </ul>
-            </div>
-            <br><br><p class="copyright"> Nathan Cornell</a></p>
+      <section id="about" class="about">
+        <div class="container">
+          <div class="about-img">
+            <img
+              src="assets/Pic1.png"
+              alt="Nate C"
+              class="about-pic"
+            />
+          </div>
+          <div class="about-text-box">
+            <h2>About Me</h2>
+            <p>
+              I am a full-stack web developer in Toronto, Canada. I attended a coding bootcamp at the University of Toronto in 2020, which really helped pointing
+              in the right direction of my goal, becoming a web developer. I found React to be among the most challenging, but also the most rewarding. 
+              I gained more of an interest in the front end frameworks, and want to continue to learn UI/UX design. 
+            </p>
+            <p>
+              I have a background in Film & Tv Production. I have attended Niagara College in 2008, and Trebas Institute, Toronto, 
+              in 2010. During these times, I was able to get my hands dirty and really start hammering out a foundation with my current 
+              skill set. I spent a lot of time editing tv/film, music, as well as participating in sound scores, ADR, foley, and soundfx.
+              I am a budding amateur photographer who enjoys Photoshop, Lightroom, and music production in my spare time.
+            </p>
+          </div>
         </div>
-    </section>
-    <script type="text/javascript">
-        window.addEventListener("scroll", function () {
-            var header = document.querySelector("header");
-            header.classList.toggle("sticky", window.scrollY > 0);
-        });
-        </script>
-</body>
+        <hr />
+      </section>
+      <section id="services" class="services">
+        <div class="container">
+          <div class="title-heading">
+            <h2>PRIORITIZE YOUR GOALS</h2>
+            <p>
+              I can help. To me, this is more than just a project.
+            </p>
+          </div>
+          <div class="service-tiers">
+            <div class="tier-item">
+              <i class="fa fa-code" aria-hidden="true"></i>
+              <h2>Web Development</h2>
+              <p>
+                Whether you're just starting a business, or you want to give your page an upgrade,
+                I can help bring your vision online. By utilizing various languages such as HTML, CSS,
+                Javascript, back-end applications, and Javascript libraries such as React, your application is 
+                sure to catch clients & employers attention.
+              </p>
+            </div>
+            <div class="tier-item">
+              <i class="fa fa-mobile" aria-hidden="true"></i>
+              <h2>Responsive Design</h2>
+              <p>
+                Your application will be robust, and fully functional across all devices. Whether you're on the go, in the office, or 
+                on vacation, you can be sure that you are in good hands. By using a CSS framework like Bootstrap, as well as Javascript, 
+                the application will appear seamless while being very user friendly.
+              </p>
+            </div>
+            <div class="tier-item">
+              <i class="fa fa-eye" aria-hidden="true"></i>
+              <h2>Your Idea, Your Vision</h2>
+              <p>
+                This isn't just my project, it's our project. Looks aren't just everything. Our goal is to create an application that impresses
+                you, as well as the public. From every color, nav bar, effects, pictures etc. I ensure that I will never be 100% finished
+                until I have exceeded the clients expectations.
+              </p>
+            </div>
+          </div>
+        </div>
+        <hr />
+      </section>
+
+      <section id="projects" class="projects">
+        <div class="title-heading">
+          <h2>PROJECTS</h2>
+          <p>These are some of my recent projects</p>
+        </div>
+        <div class="project-item">
+          <div class="project-img has-margin-right">
+            <img src="assets/What's in my fridge.png" />
+          </div>
+          <div class="project-description">
+            <h2>What's In My Fridge?</h2>
+            <p>
+              This is a simple application that allows the user to search for a recipe with any ingredients found in your fridge.
+              If you are not sure what to make, this is the app for you. With ease of use, the program allows you to enter in different
+              ingredients that will help you narrow down your search. Once you have listed your ingredients, an API call will return a list
+              of various recipes that can be made with those ingredients. We list all necessary ingredients, servings, etc. You can also 
+              click the link and it will take you to a page with the whole meal.
+            </p>
+            <a href="https://llenrocc.github.io/Recipe_API/" class="project-link" target="_blank"
+              ><i class="fa fa-google" aria-hidden="true"> View Project</i></a
+            >
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="project-description has-margin-right">
+            <h2>Weather App</h2>
+            <p>
+              This is a simple to-do application that will allow you to find the weather in any city.
+              Open up the application, and type in any city that you want to find the weather for. Whether you're on vacation,
+              wanting to go for a run, wanting to play sports etc, this is the one for you. Once a city has been chosen, it will save all 
+              of your searches, until you decide to delete them. They will display the current forecast as well as the next 5 day forecast. 
+            </p>
+            <a href="https://llenrocc.github.io/Weather_API/" class="project-link" target="_blank"
+              ><i class="fa fa-google" aria-hidden="true"> View Project</i></a
+            >
+          </div>
+          <div class="project-img">
+            <img src="assets/WeatherApp.png" />
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="project-img has-margin-right">
+            <img src="assets/dayplanner.png" />
+          </div>
+          <div class="project-description">
+            <h2>Day Planner</h2>
+            <p>
+              It can be very difficult to keep track of your busy days sometimes. That's why this day planner is perfect. Very user friendly,
+              you can enter in different tasks/meetings you have throughout the day and save them here. All of your tasks will be saved, and as the day 
+              progresses, the tasks will be green if they are yet to happen. And they will be red once they have passed. You are able to 
+              save all of your inputs so you can go back and anytime and double check what time that meeting was!
+            </p>
+            <a href="https://llenrocc.github.io/Day_Planner/" class="project-link" target="_blank"
+              ><i class="fa fa-google" aria-hidden="true"> View Project</i></a
+            >
+          </div>
+        </div>
+        <hr />
+      </section>
+      <section id="contact" class="contact">
+        <h2>Reach Out To Me</h2>
+        <p>
+          I am only a click away! Please, do not hesitate to contact me! If you have any questions/inquiries, follow me on social media or send me a message to the email provided.
+        </p>
+        <div class="container">
+          <p>
+            <a href="mailto:nathan.r.cornell@gmail.com">
+                <i class="fas fa-envelope-open"></i> nathan.r.cornell@gmail.com</a
+            >
+          </p>
+          <p>
+            <a href="https://github.com/Llenrocc" target="_blank"
+              ><i class="fab fa-github"> Github</i></a
+            >
+          </p>
+          <p>
+            <a href="https://www.linkedin.com/in/nathan-cornell02" target="_blank"><i class="fab fa-linkedin"> LinkedIn</i></a>
+          </p> 
+        </div>
+        <hr />
+      </section>
+      <footer>
+        <div class="footer-nav">
+          <a href="#landing-page" class="footer-nav-link">Home</a>
+          <a href="#about" class="footer-nav-link">About</a>
+          <a href="#services" class="footer-nav-link">Services</a>
+          <a href="projects" class="footer-nav-link">Projects</a>
+          <a href="#contact" class="footer-nav-link">Contact</a>
+        </div>
+        <br>
+        <br>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/nate.cornell.5/" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/llenrocc/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/nathan-cornell02" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </footer>
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>
