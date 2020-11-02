@@ -431,7 +431,7 @@ hr {
 }
 
 .project-description p {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Combo', cursive;
   font-size: 1.4rem;
 }
 
@@ -454,12 +454,13 @@ hr {
 
 .contact h2 {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-bottom: 5rem;
+  color: #667eea;
 }
 
 .contact p {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Combo', cursive;
   font-size: 1.4rem;
   padding: 0;
   margin: 0.9rem 2rem;
